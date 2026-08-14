@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <div class="header">
+      <button id="one">One</button><button id="two">Two</button
+      ><button id="three">Three</button>
+    </div>
+    <div id="content"></div>
+    <script>
+      const one = document.getElementById("one");
+      const two = document.getElementById("two");
+      const three = document.getElementById("three");
+
+      one.addEventListener("click", () => {
+        include("content", "content/examples/one.html");
+      });
+      two.addEventListener("click", () => {
+        include("content", "content/examples/two.html");
+      });
+      three.addEventListener("click", () => {
+        include("content", "content/examples/three.html");
+      });
+    </script>
+    <script src="@/full/0.2.php.js"></script>
+  </body>
+</html>
