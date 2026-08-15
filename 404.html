@@ -1,8 +1,12 @@
 <script src="https://alas-web-portal.github.io/pjs-example/@/full/0.2.php.js"></script>
 <div id="fartacious"></div>
+<br>
+<a href="/pjs-example/example/pjs">Example page 1</a> <a href="/pjs-example/example/numbers">Example page 2</a>
 <script>
   const wlp = window.location.pathname;
   if (wlp === "/example/pjs" || wlp === "/pjs-example/example/pjs") {
     include("fartacious", "https://alas-web-portal.github.io/pjs-example/content/examples/example-pjs.html");
+  } else   if (wlp === "/example/numbers" || wlp === "/pjs-example/example/numbers") {
+    include("fartacious", "https://alas-web-portal.github.io/pjs-example/index.html");
   }
 </script>
